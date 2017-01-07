@@ -1,0 +1,32 @@
+{
+  "students":
+    {
+      "id": 0,
+      "first": "Marcus",
+      "last": "Schaefer",
+      "dob": "1999-11-26",
+      "lane": "3",
+      "repeat": "0",
+      "entrance": "2015"
+    },
+    {
+      "id": 1,
+      "first": "Rickey",
+      "last": "Finn",
+      "dob": "1998-12-02",
+      "lane": "2",
+      "repeat": "0",
+      "entrance": "2014"
+    },
+    {
+      "id": 2,
+      "first": "Richelle",
+      "last": "Verde",
+      "dob": "2000-02-01",
+      "lane": "2",
+      "repeat": "0",
+      "entrance": "2014"
+    }
+}
+
+create

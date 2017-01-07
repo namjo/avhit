@@ -1,0 +1,16 @@
+DELETE FROM student;
+
+INSERT INTO student VALUES 
+{{#repeat 400}}
+(
+  '{{@index}}',
+  '{{firstName}}',
+  '{{lastName}}',
+  '{{date '1998' '2004' 'YYYY-MM-DD'}}',
+  '{{int 1 4}}',
+  '{{int 0 2}}',
+  '{{date '2000' '2017' 'YYYY'}}'
+)
+{{/repeat}};
+
+SELECT * FROM student;

@@ -1,0 +1,19 @@
+{
+  "name": "avhit",
+  "version": "1.0.0",
+  "description": "Administration Software for Alexander-von-Humboldt-Oberschule",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namjo/avhit.git"
+  },
+  "author": "Dae Hyun Johannes Nam <nam.johannes@gmail.com> (https://github.com/namjo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namjo/avhit/issues"
+  },
+  "homepage": "https://github.com/namjo/avhit#readme"
+}
