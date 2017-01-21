@@ -1,0 +1,12 @@
+{
+  "fs": {
+    "root": "Users/dhjn/avhit"
+    },
+  "db": {
+    "hostIp": "192.168.0.3",
+    "hostMachine": "dhjnpc.local",
+    "user": "root",
+    "password": "2143",
+    "database": "avhit"
+  }
+}

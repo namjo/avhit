@@ -1,0 +1,13 @@
+DELETE FROM teacher;
+
+INSERT INTO teacher(id, first, last, abbr, pwd) VALUES 
+{{#each teacher}}
+(
+  {{@index}},
+  '{{firstName}}',
+  '{{this.last}}',
+  '{{this.abbr}}',
+  '{{& randstr 20 "1234567890qwertzuiopasdfghjkl#yxcvbnm,.+-!\"§$%&/()=?"}}'
+){{#unless @last}}, {{/unless}}
+{{/each}}
+;
