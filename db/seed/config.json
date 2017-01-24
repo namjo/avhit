@@ -1,0 +1,40 @@
+{
+  "db": {
+    "hostIp": "192.168.0.3",
+    "hostMachine": "dhjnpc.local",
+    "user": "root",
+    "password": "2143",
+    "database": "avhit"
+  },
+  "dims": {
+    "student": {
+      "number": 100
+    },
+    "teacher": {
+      "number": 10
+    },
+    "course": {
+      "number": 500,
+      "maxterm": 4
+    }
+  },
+  "subject": {
+    "bi": "Biologie",
+    "ch": "Chemie",
+    "de": "Deutsch",
+    "en": "Englisch",
+    "es": "Spanisch",
+    "fr": "Französisch",
+    "ge": "Geographie",
+    "hi": "Geschichte",
+    "in": "Informatik",
+    "ku": "Kunst",
+    "la": "Latain",
+    "ma": "Mathematik",
+    "mu": "Musik",
+    "ph": "Physik",
+    "po": "Politik",
+    "ru": "Russisch",
+    "sp": "Sport"
+  }
+}

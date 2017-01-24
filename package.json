@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed_classic": "echo 'script execution' && date && DEBUG=seed_classic node db/seed/seed_classic.js && echo 'insert into DB' && date && mysql -u root -h 192.168.0.3 -p2143 avhit < db/seed/seed_classic.sql && echo 'inserted into DB. Done' && date",
-    "seed_pipe": "DEBUG=seed_pipe node db/seed/seed_pipe.js --root /Users/dhjn/projs/avhit/",
-    "seed_with_multiple_connections": "DEBUG=seed_with_multiple_connections node db/seed/seed_with_multiple_connections.js --root /Users/dhjn/projs/avhit/",
-    "seed_promise": "DEBUG=seed_promise node db/seed/seed_promise.js --root /Users/dhjn/projs/avhit/",
+    "seed": "DEBUG=student,teacher,subject,course,seed,student_attends_course node db/seed/seed.js --reldir ./db/seed/",
+    "seed-promise": "DEBUG=student,teacher,subject,course,seed node db/seed/seed-promise.js --reldir ./db/seed/",
     "server_start": ""
   },
   "repository": {
@@ -23,15 +21,19 @@
   "homepage": "https://github.com/namjo/avhit#readme",
   "devDependencies": {
     "benchmark": "^2.1.3",
+    "chai": "^3.5.0",
     "chance": "^1.0.4",
     "debug": "^2.6.0",
     "dummy-json": "2.0.0",
     "gulp": "^3.9.1",
     "handlebars": "^4.0.6",
+    "mocha": "^3.2.0",
     "mustache": "^2.3.0",
-    "pryjs": "^1.0.3"
+    "pryjs": "^1.0.3",
+    "sinon": "^1.17.7"
   },
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "bluebird": "^3.4.7",
     "body-parser": "^1.16.0",
     "cookie-parser": "^1.4.3",
@@ -41,6 +43,7 @@
     "mysql": "^2.12.0",
     "nconf": "^0.8.4",
     "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7"
   }
 }

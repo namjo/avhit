@@ -1,7 +1,0 @@
-DELETE FROM subject;
-
-INSERT INTO subject(id, title) VALUES 
-{{#each subject}}
-  ('{{this.id}}', '{{this.title}}'){{#unless @last}}, {{/unless}}
-{{/each}}
-;
